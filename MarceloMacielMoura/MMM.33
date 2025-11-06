@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class MenuOpcaoSair {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int opcao = 0; // variável para armazenar a escolha do usuário
+
+        while (opcao != 2) { // continua enquanto não escolher sair
+            // Exibe o menu
+            System.out.println("\n===== MENU =====");
+            System.out.println("1 - Mensagem");
+            System.out.println("2 - Sair");
+            System.out.print("Escolha uma opção: ");
+            
+            opcao = input.nextInt();
+
+            if (opcao == 1) {
+                System.out.println("Você escolheu a mensagem!");
+            } else if (opcao == 2) {
+                System.out.println("Saindo do programa...");
+            } else {
+                System.out.println("Opção inválida! Tente novamente.");
+            }
+        }
+
+        input.close();
+    }
+}

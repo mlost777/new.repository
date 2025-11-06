@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MaiorNumeroDoWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int numero;
+        int maior = Integer.MIN_VALUE; // inicializa com o menor valor possível
+
+        do {
+            System.out.print("Digite um número (negativo para sair): ");
+            numero = input.nextInt();
+
+            if (numero >= 0 && numero > maior) {
+                maior = numero; // atualiza o maior se o número for positivo
+            }
+
+        } while (numero >= 0); // repete enquanto o número não for negativo
+
+        if (maior == Integer.MIN_VALUE) {
+            System.out.println("Nenhum número positivo foi digitado.");
+        } else {
+            System.out.println("O maior número positivo digitado foi: " + maior);
+        }
+
+        input.close();
+    }
+}

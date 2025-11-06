@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ConfirmarSaidaDoWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        char opcao;
+
+        do {
+            // Exibe o menu (pode ser expandido com opções)
+            System.out.println("\n===== MENU =====");
+            System.out.println("1 - Mostrar mensagem");
+            System.out.println("2 - Outra opção");
+
+            System.out.print("Deseja sair do programa? (s/n): ");
+            opcao = input.next().toLowerCase().charAt(0); // lê o primeiro caractere
+
+        } while (opcao != 's'); // repete enquanto não digitar 's'
+
+        System.out.println("Saindo do programa...");
+
+        input.close();
+    }
+}

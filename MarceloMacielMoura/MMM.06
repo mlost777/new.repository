@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class MultiploDe3e5 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = input.nextInt();
+
+        // Verificação usando if
+        if (numero % 3 == 0 && numero % 5 == 0) {
+            System.out.println("O número é múltiplo de 3 e de 5.");
+        } else if (numero % 3 == 0) {
+            System.out.println("O número é múltiplo de 3.");
+        } else if (numero % 5 == 0) {
+            System.out.println("O número é múltiplo de 5.");
+        } else {
+            System.out.println("O número NÃO é múltiplo de 3 nem de 5.");
+        }
+
+        input.close();
+    }
+}

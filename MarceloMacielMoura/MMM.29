@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ContarDigitosWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite um número positivo: ");
+        int numero = input.nextInt();
+
+        if (numero < 0) {
+            System.out.println("Número inválido! Digite um número positivo.");
+            input.close();
+            return;
+        }
+
+        int contador = 0; // contador de dígitos
+        int temp = numero; // variável temporária para divisão
+
+        while (temp > 0) {
+            temp /= 10; // remove o último dígito
+            contador++; // incrementa contador
+        }
+
+        System.out.println("O número " + numero + " tem " + contador + " dígito(s).");
+
+        input.close();
+    }
+}

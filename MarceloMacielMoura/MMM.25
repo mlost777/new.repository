@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TabuadaWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite um número para ver sua tabuada: ");
+        int numero = input.nextInt();
+
+        int i = 1; // contador inicial
+
+        System.out.println("\nTabuada de " + numero + ":");
+
+        while (i <= 10) { // laço de 1 até 10
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
+            i++; // incrementa o contador
+        }
+
+        input.close();
+    }
+}

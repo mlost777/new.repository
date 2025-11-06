@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class MenuWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int opcao = 0;
+
+        while (opcao != 4) { // continua enquanto não escolher sair (opção 4)
+            // Exibe o menu
+            System.out.println("\n===== MENU =====");
+            System.out.println("1. Dizer olá");
+            System.out.println("2. Mostrar um número aleatório");
+            System.out.println("3. Exibir uma mensagem");
+            System.out.println("4. Sair");
+            System.out.print("Escolha uma opção: ");
+            
+            opcao = input.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Olá! 👋");
+                    break;
+                case 2:
+                    int aleatorio = (int)(Math.random() * 100) + 1;
+                    System.out.println("Número aleatório: " + aleatorio);
+                    break;
+                case 3:
+                    System.out.println("Você está aprendendo Java! 🚀");
+                    break;
+                case 4:
+                    System.out.println("Saindo do programa... Até logo!");
+                    break;
+                default:
+                    System.out.println("Opção inválida! Tente novamente.");
+            }
+        }
+
+        input.close();
+    }
+}

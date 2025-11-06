@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Quantos termos da sequência de Fibonacci deseja mostrar? ");
+        int n = input.nextInt();
+
+        int primeiro = 0, segundo = 1;
+
+        System.out.println("\nSequência de Fibonacci com " + n + " termos:");
+
+        // Exibe os primeiros termos
+        for (int i = 1; i <= n; i++) {
+            System.out.print(primeiro + " ");
+            
+            int proximo = primeiro + segundo; // soma dos dois anteriores
+            primeiro = segundo;
+            segundo = proximo;
+        }
+
+        input.close();
+    }
+}

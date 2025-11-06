@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PedirSenhaDoWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int senha;
+
+        do {
+            System.out.print("Digite a senha: ");
+            senha = input.nextInt();
+
+            if (senha != 1111) {
+                System.out.println("Senha incorreta! Tente novamente.");
+            }
+
+        } while (senha != 1111); // repete até digitar a senha correta
+
+        System.out.println("Acesso liberado!");
+
+        input.close();
+    }
+}

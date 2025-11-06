@@ -1,0 +1,14 @@
+public class ContarAte10 {
+    public static void main(String[] args) {
+
+        int i = 1; // inicializa o contador
+
+        System.out.println("Contando de 1 a 10 usando while:");
+
+        // Laço while que executa enquanto i for menor ou igual a 10
+        while (i <= 10) {
+            System.out.println(i);
+            i++; // incrementa o contador
+        }
+    }
+}

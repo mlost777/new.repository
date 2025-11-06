@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class NotasEAprovacao {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite a nota do aluno (0 a 10): ");
+        double nota = input.nextDouble();
+
+        if (nota < 0 || nota > 10) {
+            System.out.println("Nota inválida! Digite um valor entre 0 e 10.");
+        } else if (nota < 5) {
+            System.out.println("Reprovado 😞");
+        } else if (nota >= 5 && nota < 7) {
+            System.out.println("Recuperação 😐");
+        } else {
+            System.out.println("Aprovado! 🎉");
+        }
+
+        input.close();
+    }
+}

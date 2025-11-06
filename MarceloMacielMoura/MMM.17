@@ -1,0 +1,12 @@
+public class QuadradoDosNumeros {
+    public static void main(String[] args) {
+
+        System.out.println("Quadrado dos números de 1 a 10:");
+
+        // Laço for que percorre os números de 1 até 10
+        for (int i = 1; i <= 10; i++) {
+            int quadrado = i * i; // calcula o quadrado do número
+            System.out.println(i + "² = " + quadrado);
+        }
+    }
+}

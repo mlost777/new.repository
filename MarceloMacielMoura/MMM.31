@@ -1,0 +1,11 @@
+public class ContarDoWhile {
+    public static void main(String[] args) {
+        
+        int numero = 1; // contador inicial
+
+        do {
+            System.out.println(numero); // imprime o número
+            numero++; // incrementa
+        } while (numero <= 10); // condição para continuar
+    }
+}

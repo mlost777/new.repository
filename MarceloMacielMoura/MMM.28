@@ -1,0 +1,16 @@
+public class SomaParesWhile {
+    public static void main(String[] args) {
+        
+        int numero = 1; // número inicial
+        int soma = 0;   // acumulador da soma dos pares
+
+        while (numero <= 100) {
+            if (numero % 2 == 0) { // verifica se é par
+                soma += numero;    // acumula na soma
+            }
+            numero++; // incrementa o número
+        }
+
+        System.out.println("A soma de todos os números pares de 1 a 100 é: " + soma);
+    }
+}

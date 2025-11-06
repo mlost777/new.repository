@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SomaAteZero {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int numero;
+        int soma = 0;
+
+        System.out.println("Digite números para somar (digite 0 para parar):");
+
+        // Laço while continua enquanto o número digitado for diferente de 0
+        while (true) {
+            System.out.print("Número: ");
+            numero = input.nextInt();
+
+            if (numero == 0) {
+                break; // sai do laço se o usuário digitar 0
+            }
+
+            soma += numero; // acumula a soma
+        }
+
+        System.out.println("A soma total dos números digitados é: " + soma);
+
+        input.close();
+    }
+}

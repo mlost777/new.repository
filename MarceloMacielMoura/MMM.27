@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ContarImparesWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        int contador = 1; // contador de quantos números foram digitados
+        int impares = 0;  // contador de números ímpares
+
+        System.out.println("Digite 10 números:");
+
+        while (contador <= 10) {
+            System.out.print("Número " + contador + ": ");
+            int numero = input.nextInt();
+
+            if (numero % 2 != 0) { // verifica se é ímpar
+                impares++;
+            }
+
+            contador++; // incrementa o contador
+        }
+
+        System.out.println("Quantidade de números ímpares digitados: " + impares);
+
+        input.close();
+    }
+}

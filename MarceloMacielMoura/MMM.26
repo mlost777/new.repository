@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class NumeroPrimoWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite um número para verificar se é primo: ");
+        int numero = input.nextInt();
+
+        int divisores = 0; // contador de divisores
+        int i = 1; // contador inicial para o while
+
+        while (i <= numero) {
+            if (numero % i == 0) {
+                divisores++;
+            }
+            i++; // incrementa o contador
+        }
+
+        if (divisores == 2) {
+            System.out.println(numero + " é um número primo!");
+        } else {
+            System.out.println(numero + " NÃO é um número primo.");
+        }
+
+        input.close();
+    }
+}

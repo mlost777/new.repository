@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class NumeroPositivo {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int numero;
+
+        System.out.println("Digite um número positivo:");
+
+        // Laço continua enquanto o número for negativo ou zero
+        while (true) {
+            System.out.print("Número: ");
+            numero = input.nextInt();
+
+            if (numero > 0) {
+                break; // número positivo, sai do laço
+            } else {
+                System.out.println("Número não é positivo! Tente novamente.");
+            }
+        }
+
+        System.out.println("Obrigado! Você digitou o número positivo: " + numero);
+
+        input.close();
+    }
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SomaAteMultiploDe10 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int numero;
+        int soma = 0;
+
+        do {
+            System.out.print("Digite um número: ");
+            numero = input.nextInt();
+            soma += numero; // acumula o número digitado
+        } while (numero % 10 != 0); // repete enquanto não for múltiplo de 10
+
+        System.out.println("A soma total dos números digitados é: " + soma);
+
+        input.close();
+    }
+}

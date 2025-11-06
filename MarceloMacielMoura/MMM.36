@@ -1,0 +1,11 @@
+public class ContagemRegressivaDoWhile {
+    public static void main(String[] args) {
+        
+        int numero = 10; // contador inicial
+
+        do {
+            System.out.println(numero); // imprime o número atual
+            numero--; // decrementa o contador
+        } while (numero >= 1); // continua enquanto o número for maior ou igual a 1
+    }
+}
