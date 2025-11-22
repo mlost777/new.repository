@@ -1,5 +1,10 @@
 public class ContarDoWhile {
     public static void main(String[] args) {
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - ContarDoWhile ");
+    System.out.println("************************************");
         
         int numero = 1; // contador inicial
 

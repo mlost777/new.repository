@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class MenuOpcaoSair {
     public static void main(String[] args) {
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - MenuOpcaoSair ");
+    System.out.println("************************************");
         
         Scanner input = new Scanner(System.in);
         int opcao = 0; // variável para armazenar a escolha do usuário

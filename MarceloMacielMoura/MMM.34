@@ -2,6 +2,16 @@ import java.util.Scanner;
 
 public class PedirSenhaDoWhile {
     public static void main(String[] args) {
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - ");
+    System.out.println("************************************");
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - PedirSenhaDoWhile ");
+    System.out.println("************************************");
         
         Scanner input = new Scanner(System.in);
         int senha;

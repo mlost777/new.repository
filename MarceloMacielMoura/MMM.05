@@ -3,6 +3,11 @@ import java.util.Scanner;
 public class NotasEAprovacao {
     public static void main(String[] args) {
         
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - NotasEAprovacao");
+    System.out.println("************************************");
+   
         Scanner input = new Scanner(System.in);
 
         System.out.print("Digite a nota do aluno (0 a 10): ");

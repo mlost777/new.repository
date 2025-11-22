@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class NumeroPositivoDoWhile {
     public static void main(String[] args) {
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - NumeroPositivoDoWhile ");
+    System.out.println("************************************");
         
         Scanner input = new Scanner(System.in);
         int numero;

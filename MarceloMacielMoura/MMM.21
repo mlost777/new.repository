@@ -1,5 +1,10 @@
 public class ContarAte10 {
     public static void main(String[] args) {
+    
+    System.out.println("************************************");
+    System.out.println("     Marcelo Maciel - RA 0023437    ");
+    System.out.println("  Programa MMM05 - ContarAte10 ");
+    System.out.println("************************************");
 
         int i = 1; // inicializa o contador
 
